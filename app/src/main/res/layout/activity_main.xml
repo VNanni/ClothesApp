@@ -1,15 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <android.opengl.GLSurfaceView
+
+    <com.example.vnannni.clothesmanage.Glview
         android:id="@+id/myGLsurface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    </com.example.vnannni.clothesmanage.Glview>
+
+    <TextView
+        android:id="@+id/xi"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="身高"
+        android:layout_below="@+id/body"/>
+
+    <SeekBar
+        android:id="@+id/body"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/jk"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="胸围"
+        android:layout_below="@+id/jiankuan"/>
+    <SeekBar
+        android:id="@+id/jiankuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xi"
+        android:max="100" />
+
+    <TextView
+    android:id="@+id/shenggao"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:text="肩宽"
+    android:layout_below="@+id/sg"/>
+    <SeekBar
+        android:id="@+id/sg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jk"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/yaowei"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="腰围"
+        android:layout_below="@+id/yw"/>
+    <SeekBar
+        android:id="@+id/yw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shenggao"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/tunwei"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="臀围"
+        android:layout_below="@+id/tw"/>
+    <SeekBar
+        android:id="@+id/tw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yaowei"
+        android:max="100" />
 
 
-</LinearLayout>
+</RelativeLayout>

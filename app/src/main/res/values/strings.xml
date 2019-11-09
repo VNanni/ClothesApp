@@ -1,3 +1,4 @@
 <resources>
-    <string name="Clothes">shiyong</string>
+    <string name="Clothes">OBJ加载</string>
+    <string name="Model">模型</string>
 </resources>
